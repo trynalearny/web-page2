@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+:root{
+    font-family:"Inter","sans-serif";
+}
+.timeline{
+    position:relative;
+    max-width:800px;
+    margin:0 auto;
+    padding:40px 20px;
+    
+
+}
+
+.timeline::after{
+    content:'';
+    position:absolute;
+    width:2px;
+    background-color:#000;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-1px;
+    
+
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color:blue;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+  
+  
+}
+.timeline-item.left .timeline-content {
+  left: 55%;
+  text-align:left;
+}
+
+.timeline-item.right .timeline-content {
+  left: -55%;
+  text-align:right;
+}
+.timeline-content {
+  position: relative;
+  left: 30px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:lightgray;
+}
+
+.timeline-description {
+  margin-bottom: 10px;
+ 
+  
+}
+
